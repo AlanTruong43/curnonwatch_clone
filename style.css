@@ -4,6 +4,11 @@
     margin: 0;
     font-family: 'Montserrat', 'Roboto', sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: block;
     margin: 0 auto;
@@ -13,11 +18,16 @@ a{
     cursor: pointer;
 }
 
+:root{
+    --color: rgb(248,247,244);
+    --color-2: rgb(236,235,234);
+}
+
 /* -menu- */
 
 div.menu{
     width: 100%;
-    background-color: lightgray;
+    background-color: var(--color);
 }
 
 ul.menu{
@@ -72,7 +82,7 @@ div.event__in p{
 }
 
 button#btn__event{
-    background-color: rgb(236,235,234);
+    background-color: var(--color);
     padding: 5%;
     color: white;
     font-weight: bold;
@@ -90,7 +100,7 @@ button#btn__event:hover{
 ul.event{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(236,235,234);
+    background-color: var(--color-2);
 }
 
 ul.event li{
@@ -184,7 +194,7 @@ ul.best__seller__product li a{
     position: absolute;
     bottom: 30%;
     left: 12%;
-    background-color: rgb(236,235,234);
+    background-color: var(--color);
     font-size: 100%;
     text-decoration: none;
     color: black;
@@ -350,6 +360,7 @@ ul.review li img{
     width: 100%;
 }
 
+
 /* info */
 div.info {
     width: 100%;
@@ -423,6 +434,12 @@ div.info {
     /* margin-bottom: 3%; */
   }
 
+  div.contact a{
+    color: black;
+    font-size: 250%;
+    margin-right: 5%;
+  }
+
   div.address{
     width: 30%;
   }
@@ -439,7 +456,7 @@ div.info {
 
 div.guarantee{
     width: 100%;
-    background-color: rgb(181, 182, 182);
+    background-color: var(--color-2);
     display: flex;
     justify-content: space-between;
     padding-top: 2%;
@@ -490,11 +507,12 @@ div.license{
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 
 div.license__1{
     width: 60%;
+    margin-left: 5%;
 }
 
 div.license__1 p:first-child{
@@ -503,5 +521,14 @@ div.license__1 p:first-child{
 }
 
 #license{
-    
+    margin-right: 5%;
+}
+
+.totop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 3%;
+    border-radius: 100%;
+    background-color: rgb(231, 233, 238);
 }
