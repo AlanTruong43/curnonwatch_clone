@@ -12,10 +12,12 @@ html{
 body{
     display: block;
     margin: 0 auto;
+    /* background-color: red; */
 }
 
 a{
     cursor: pointer;
+    text-decoration: none;
 }
 
 :root{
@@ -23,8 +25,19 @@ a{
     --color-2: rgb(236,235,234);
 }
 
-/* -menu- */
+header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 
+section{
+    margin-top: 5%;
+}
+
+/* -menu- */
 div.menu{
     width: 100%;
     background-color: var(--color);
@@ -64,7 +77,6 @@ ul.dropdown{
     background-color: var(--color);
     width: 100%;
     left: 20%;
-    /* top: 270%; */
     top: 100%;
 }
 
@@ -579,7 +591,7 @@ div.license__1 p:first-child{
     width: 95%;
     margin: 0 auto;
     display: block;
-    margin-top: 2%;
+    margin-top: 100px;
 }
 
 div.watch_product{
@@ -611,24 +623,69 @@ ul.watch_menu{
     margin: 0 auto;
     display: flex;
     background-color: rgb(194, 189, 183);
+    /* overflow: hidden; */
 }
 
 ul.watch_menu li{
     padding: 1.5%;
     border-left: 1px solid white;
-    /* position: relative; */
+}
+
+ul.watch_menu li:nth-child(5){
+    border: none;
 }
 
 ul.watch_menu li:last-child{
-    padding-left: 51%;
+    margin-left: 47%;
 }
 
-ul.watch_menu li:hover div.watch_menu2{
+/* menu__Watch 2  */
+
+ul.watch_menu li{
+    position: relative;
+    display: inline-block;
+    transition: 0.12s;
+}
+
+ul.watch_menu2{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(194, 189, 183);
+    display: none;
+}
+
+ul.watch_menu2 li{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul.watch_menu2 li:first-child{
+    border-top: 1px solid white;
+}
+
+ul.watch_menu2 li{
+    border-bottom: 1px solid white;
+}
+
+ul.watch_menu2 li a{
+    color: white;
+    font-weight: bold;
+}
+
+ul.watch_menu li:last-child {
+    padding-left: 1.5%;
+  }
+
+ul.watch_menu li:hover ul.watch_menu2{
     display: block;
 }
 
-div.watch_menu2{
-    /* position: absolute; */
-    display: none;
-    background-color: rebeccapurple;
+ul.watch_menu2 li:last-child{
+    margin-left: 0;
 }
