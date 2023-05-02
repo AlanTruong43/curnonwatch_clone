@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    background-color: red;
+    width: 100%;
+}
+
+nav{
+    background-color: red;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+ul.menu{
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+}
+
+ul.menu li{
+    margin-right: 5%;
+    width: 7%;
+    background-color: blue;
+    display: block;
+    text-align: center;
+}
+
+ul.menu li a{
+    /* vertical-align: middle; */
+}
+
+#logo__shop{
+    font-size: 10%;
+    color: red;
+}
+
+#logoweb{
+
+}
