@@ -5,21 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alan Watch</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.4.0/css/all.css" integrity="sha384-gkSyWJx8hVpXauPtho7VpLaW1SSc7VgavL5IM/t7/jb5FZ3q7g9X/yQrt6lHJIKw" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="">nam giới</a></li>
-                <li><a href="">nữ giới</a></li>
+                <li><a href="">nam giới</a>
+                <ul class="dropdown">
+                    <li><a href="">đồng hồ</a></li>
+                    <li><a href="">phụ kiện</a></sli>
+                    <li><a href="">quà tặng</a></li>
+                </ul>
+                </li>
+                <li><a href="">nữ giới</a>
+                    <ul class="dropdown">
+                        <li><a href="">đồng hồ</a></li>
+                        <li><a href="">phụ kiện</a></sli>
+                        <li><a href="">quà tặng</a></li>
+                    </ul>
+                </li>
                 <li><a href="">about</a></li>
                 <li id="logoweb"><img src="img index/logo.cc5d661a.svg" alt=""></li>
-                <li><a href="">giỏ hàng <i class="fa-solid fa-shop" style="color: #e9eaed;"></i></a></li>
-                <li></li>
+                <li><a href="">giỏ hàng <i id="cart__icon" class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
             </ul>
         </nav>
     </header>
+
+    <section>
+        <div class="banner__event">
+            <img src="img index/banner_web_ngang_3_ce2a4c482f.webp" alt="">
+            <div class="banner__event__content">
+                <h3>Introducing Summer Collection</h3>
+                <h1>SUMMER JOY</h1>
+                <p>Mùa hạ trong cậu có vị gì?</p>
+                <button>shop now</button>
+            </div>
+            <div class="banner__event__commit">
+                <p><i class="fa-solid fa-truck-fast"></i> FREESHIP ĐƠN HÀNG >700K</p>
+                <p><i class="fas fa-shield"></i> BẢO HÀNH 10 NĂM</p>
+                <p><i class="fa-solid fa-box"></i> ĐỔI TRẢ MIỄN PHÍ TRONG VÒNG 3 NGÀY</p>
+            </div>
+        </div>
+
+        <div class="mini">
+            <div class="mini__product">
+                <img src="img index/mini__product1.jpg" alt="">
+                <p>đồng hồ nam</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="mini__product">
+                <img src="img index/mini__product2.jpg" alt="">
+                <p>đồng hồ nữ</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="mini__product">
+                <img src="img index/mini__product3.jpg" alt="">
+                <p>phụ kiện</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+
+        <div class="best-seller">
+            <div class="best-seller__tittle">
+                <h1>MEN'S BEST SELLERS</h1>
+                <a href="">xem tất cả <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="best-seller__product">
+                <div class="best-seller__mini-product">
+                    <img src="img watch_nam/product1.webp" alt="">
+                    <a class="add-to-cart" href="">thêm vào giỏ hàng</a>
+                    <div class="best-seller__mini-product__tittle">
+                        <a href="" class="branch">kashimir</a>
+                        <div class="best-seller__mini-product__price">
+                            <a href="" class="price-sale">2.069.000 ₫</a>
+                            <a href="" class="price">2.299.000 ₫</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-seller__mini-product">
+                    <img src="img watch_nam/product1.webp" alt="">
+                    <a class="add-to-cart" href="">thêm vào giỏ hàng</a>
+                    <div class="best-seller__mini-product__tittle">
+                        <a href="" class="branch">kashimir</a>
+                        <div class="best-seller__mini-product__price">
+                            <a href="" class="price-sale">2.069.000 ₫</a>
+                            <a href="" class="price">2.299.000 ₫</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-seller__mini-product">
+                    <img src="img watch_nam/product1.webp" alt="">
+                    <a class="add-to-cart" href="">thêm vào giỏ hàng</a>
+                    <div class="best-seller__mini-product__tittle">
+                        <a href="" class="branch">kashimir</a>
+                        <div class="best-seller__mini-product__price">
+                            <a href="" class="price-sale">2.069.000 ₫</a>
+                            <a href="" class="price">2.299.000 ₫</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-seller__mini-product">
+                    <img src="img watch_nam/product1.webp" alt="">
+                    <a class="add-to-cart" href="">thêm vào giỏ hàng</a>
+                    <div class="best-seller__mini-product__tittle">
+                        <a href="" class="branch">kashimir</a>
+                        <div class="best-seller__mini-product__price">
+                            <a href="" class="price-sale">2.069.000 ₫</a>
+                            <a href="" class="price">2.299.000 ₫</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
