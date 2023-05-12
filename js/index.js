@@ -8,4 +8,7 @@ $(document).ready(function(){
         $(this).find("i").css("color", "")
     })
 
+    $(".collection li").click(function(){
+        $(this).addClass(".collection__active");
+    })
 })
