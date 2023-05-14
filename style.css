@@ -354,23 +354,22 @@ ul.collection{
     width: 100%;
 }
 
-.collection__active{
-    border-top: 2px solid white;
-}
-
 ul.collection li{
     /* background-color: red; */
-    width: 30%;
+    width: 100%;
     border-top: 2px solid black;
     padding-top: 1%;
+    text-align: center;
 }
 
 ul.collection li i{
     font-size: 120%;
 }
 
-ul.collection li:first-child{
-    padding-left: 5%;
-    
+ul.collection li a{
+    font-weight: 700;
 }
 
+ul.collection li:first-child{
+    border-top: 2px solid white;
+}
