@@ -525,7 +525,7 @@ div.policy{
 }
 
 div.policy__product{
-    width: 40%;
+    width: 50%;
 }
 
 div.policy__product a{
@@ -538,8 +538,8 @@ div.policy__product a:first-child{
 }
 
 div.policy__services{
-    width: 40%;
-    margin-left: 37%;
+    width: 50%;
+    padding-left: 40%;
 }
 
 div.policy__services a{
@@ -607,7 +607,7 @@ ul.product__board li{
     /* margin-right: 3%; */
     margin-right: 0.1%;
     text-align: center;
-    width: 10%;
+    width: 10%; 
     background-color: grey;
     padding: 1% 0%;
     text-transform: uppercase;
@@ -690,64 +690,7 @@ div.product__product__mini:hover{
 }
 
 @media only screen and (max-width: 1023px){
-    body{
-        font-size: 90%;
-    }
-
-    div.policy{
-        font-size: 85%;
-        width: 100%;
-    }
-
-    div.policy__product{
-        width: 54%;
-    }
-
-    div.policy__services{
-        margin-left: 15%;
-    }
-
-    ul.menu{
-        font-size: 83%;
-        width: 100%;
-    }
-
-    div.shop__info{
-        width: 90%;
-        font-size: 80%;
-    }
-
-    div.register{
-        width: 38%;
-    }
-
-    div.register select{
-        float: left;
-        width: 29%;
-    }
-
-    input.input__name{
-        float: right;
-        margin-bottom: 1%;
-    }
-
-    input.input__mail{
-        padding-right: 33.5%;
-        margin-bottom: 1%;
-    }
-
-    div.register button{
-        padding: 5% 0%;
-        width: 100%;
-    }
-
-    div.license{
-        width: 90%;
-    }
-
-    div.license__text{
-        font-size: 90%;
-    }
+    
 }
 
 @media only screen and (max-width:770px){
