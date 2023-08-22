@@ -452,37 +452,31 @@ div.register{
     width: 30%;
 }
 
-div.register select{
-    padding: 5% 4%;
-    float: left;
-}
-
-div.register input{
-    width: 60%;
+div.register__form{
+    display: flex;
+    width: 100%;
 }
 
 input.input__name{
-    padding: 5%;
-    width: 65%;
-    margin-bottom: 2%;
+    width: 100%;
 }
 
 input.input__mail{
-    padding: 5%;
-    padding-right: 32%;
-    width: 100%;
-    margin-bottom: 2%;
+    width: 99%;
+    padding: 3% 0%;
+    margin-top: 5px;
+}
+
+div.register select{
+    padding: 3%;
+    margin-right: 5px;
 }
 
 div.register button{
-    width: 97.5%;
-    padding: 5%;
+    padding: 4%;
+    margin-top: 5px;
+    width: 100%;
     text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-    background-color: gray;
-    font-size: 120%;
-    border: none;
 }
 
 div.register h3{
@@ -525,7 +519,7 @@ div.policy{
 }
 
 div.policy__product{
-    width: 50%;
+    /* width: 50%; */
 }
 
 div.policy__product a{
@@ -533,14 +527,14 @@ div.policy__product a{
     width: 100%;
 }
 
-div.policy__product a:first-child{
+/* div.policy__product a:first-child{
     margin-left: 10%;
-}
+} */
 
-div.policy__services{
+/* div.policy__services{
     width: 50%;
     padding-left: 40%;
-}
+} */
 
 div.policy__services a{
     font-size: 110%;
