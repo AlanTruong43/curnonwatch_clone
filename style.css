@@ -519,7 +519,8 @@ div.policy{
 }
 
 div.policy__product{
-    /* width: 50%; */
+    flex: 1;
+    margin-left: 10%;
 }
 
 div.policy__product a{
@@ -527,14 +528,10 @@ div.policy__product a{
     width: 100%;
 }
 
-/* div.policy__product a:first-child{
-    margin-left: 10%;
-} */
 
-/* div.policy__services{
-    width: 50%;
-    padding-left: 40%;
-} */
+div.policy__services{
+    flex: 1;
+}
 
 div.policy__services a{
     font-size: 110%;
