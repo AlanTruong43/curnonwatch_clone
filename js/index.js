@@ -43,3 +43,28 @@ $(document).ready(function(){
         $("div.collection p").text("Dòng đồng hồ nữ mặt vòm thanh lịch, hiện đại");
     })
 })
+
+
+$(document).on('click', '.add-to-cart', function(e) {
+    e.preventDefault();
+    
+    const productElement = $(this).closest('.best-seller__mini-product');
+    const productInfo = {
+        name: productElement.find('.product__name').text(),
+        price: productElement.find('.price-sale').text(),
+        quantity: 1
+    };
+    
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    const existingItem = cart.find(item => item.name === productInfo.name);
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push(productInfo);
+    }
+    
+    localStorage.setItem('cart', JSON.stringify(cart));
+    
+    alert('Đã thêm vào giỏ hàng!');
+});

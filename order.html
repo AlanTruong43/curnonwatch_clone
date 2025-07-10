@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/coupon.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="">nam giới</a>
+                <ul class="dropdown">
+                    <li><a href="">đồng hồ</a></li>
+                    <li><a href="">phụ kiện</a></sli>
+                    <li><a href="">quà tặng</a></li>
+                </ul>
+                </li>
+                <li><a href="">nữ giới</a>
+                    <ul class="dropdown">
+                        <li><a href="">đồng hồ</a></li>
+                        <li><a href="">phụ kiện</a></sli>
+                        <li><a href="">quà tặng</a></li>
+                    </ul>
+                </li>
+                <li><a href="">about</a></li>
+                <li id="logoweb"><img src="img index/logo.cc5d661a.svg" alt=""></li>
+                <li><a href="order.html">giỏ hàng <i id="cart__icon" class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="order_store">
+    <h2>GIỎ HÀNG</h2>
+    <table class="store">
+        <thead> 
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Tổng giá</th>
+            </tr>
+        </thead>
+        <tbody id="cart-body"> 
+        </tbody>
+        <tfoot> 
+            <tr>
+                <td colspan="3"><strong>Tổng cộng:</strong></td>
+                <td id="products-total">0 ₫</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="coupon-section">
+        <input type="text" id="coupon-code" placeholder="Nhập mã giảm giá">
+        <button id="apply-coupon">Áp dụng</button>
+        <span id="coupon-message"></span>
+    </div>
+
+    <!-- Phần tổng kết đơn hàng -->
+    <div class="order-summary">
+        <h3>TÓM TẮT ĐƠN HÀNG</h3>
+        <div class="summary-row">
+            <span>Tạm tính:</span>
+            <span id="subtotal-amount">0 ₫</span>
+        </div>
+        <div class="summary-row">
+            <span>Giảm giá:</span>
+            <span id="discount-amount">0 ₫</span>
+        </div>
+        <div class="summary-row">
+            <span>Phí vận chuyển:</span>
+            <span id="shipping-fee">30.000 ₫</span>
+        </div>
+        <div class="summary-row total">
+            <span>Tổng cộng:</span>
+            <span id="total-amount">0 ₫</span>
+        </div>
+        <button id="checkout-btn" class="checkout-btn">THANH TOÁN</button>
+    </div>
+</section>
+
+</body>
+</html>
