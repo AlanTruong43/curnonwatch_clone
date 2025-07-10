@@ -1,4 +1,3 @@
-// cart.js
 $(function() {
     // Kiểm tra jQuery
     if (typeof jQuery == 'undefined') {
@@ -6,12 +5,10 @@ $(function() {
         return;
     }
 
-    // Load giỏ hàng khi trang được tải
     loadCart();
     if (typeof updateCartWithCoupon === 'function') {
     updateCartWithCoupon();
 }
-    // Xử lý sự kiện tăng/giảm số lượng
     $(document).on('click', '.quantity-btn', function() {
         const action = $(this).data('action');
         const productName = $(this).closest('tr').data('name');

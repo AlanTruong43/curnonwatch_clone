@@ -68,7 +68,38 @@
         <span id="coupon-message"></span>
     </div>
 
-    <!-- Phần tổng kết đơn hàng -->
+       <div class="checkout-container">
+        <!-- Form thông tin nhận hàng -->
+        <div class="delivery-info">
+            <h3>THÔNG TIN NHẬN HÀNG</h3>
+            <form id="delivery-form">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên*</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Số điện thoại*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Địa chỉ nhận hàng*</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="note">Ghi chú</label>
+                    <textarea id="note" name="note" rows="2"></textarea>
+                </div>
+            </form>
+        </div>
+
     <div class="order-summary">
         <h3>TÓM TẮT ĐƠN HÀNG</h3>
         <div class="summary-row">
